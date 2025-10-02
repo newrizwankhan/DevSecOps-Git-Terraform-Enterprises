@@ -1,5 +1,6 @@
 module "alpha_sg_1" {
-  source        = "../modules/2.sg"
+  source        = "app.terraform.io/Khans-shop/sg/sg"
+  version       = "1.2.3"
   vpc_name      = module.alpha_vpc_1.vpc_name
   vpc_id        = module.alpha_vpc_1.vpc_id
   environment   = module.alpha_vpc_1.environment

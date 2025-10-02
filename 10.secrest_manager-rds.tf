@@ -4,6 +4,7 @@ resource "random_integer" "random_user_id" {
 }
 
 module "alpha_secret_rds" {
-  source          = "../modules/9.secrets_manager"
+  source          = "app.terraform.io/Khans-shop/secretsmanager/secretsmanager"
+  version         = "1.2.3"
   rds_secret_name = "mysql-rds-password-${random_integer.random_user_id.result}"
 }

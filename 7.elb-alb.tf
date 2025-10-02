@@ -1,5 +1,6 @@
 module "alpha_elb_alb_1" {
-  source          = "../modules/6.elb-alb"
+  source          = "app.terraform.io/Khans-shop/alb/alb"
+  version         = "1.2.3"
   albname         = var.albname
   sg_id           = module.alpha_sg_1.sg_id
   subnets         = module.alpha_vpc_1.public_subnets_id

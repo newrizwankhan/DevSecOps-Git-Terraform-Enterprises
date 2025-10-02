@@ -1,5 +1,6 @@
 module "alpha_elb_1" {
-  source          = "../modules/7.elb-nlb"
+  source          = "app.terraform.io/Khans-shop/nlb/nlb"
+  version         = "1.2.3"
   env             = module.alpha_vpc_1.environment
   nlbname         = var.nlbname
   subnets         = module.alpha_vpc_1.public_subnets_id

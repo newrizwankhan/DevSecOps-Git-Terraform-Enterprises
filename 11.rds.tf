@@ -1,5 +1,6 @@
 module "alpha_rds" {
-  source                 = "../modules/10.rds"
+  source                 = "app.terraform.io/Khans-shop/rds/rds"
+  version                = "1.2.3"
   db_subnet_group_name   = "devsecopsawsday1subnetgroup"
   private_subnets        = module.alpha_vpc_1.private_subnets_id
   allocated_storage      = "10"
