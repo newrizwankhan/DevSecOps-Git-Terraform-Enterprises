@@ -1,6 +1,6 @@
 module "alpha_compute_1" {
   source  = "app.terraform.io/Khans-shop/compute/compute"
-  version = "1.2.4"
+  version = "1.2.3"
   env     = module.alpha_vpc_1.environment
   amis = {
     ap-south-1 = "ami-02d26659fd82cf299" # ubuntu 20.04 LTS Mumbai
