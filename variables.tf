@@ -9,10 +9,3 @@ variable "nlbname" {}
 variable "nlbtgname" {}
 variable "alb_certificate_arn" {}
 variable "domainname" {}
-variable "nlbname" {}
-variable "subnets" {}
-variable "tgname" {}
-variable "vpc_id" {}
-variable "private_servers" {}
-variable "certificate_arn" {}
-variable "env" {}
