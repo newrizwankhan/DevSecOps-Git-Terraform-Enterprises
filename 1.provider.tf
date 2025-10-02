@@ -12,15 +12,17 @@ terraform {
       source  = "hashicorp/aws"
     }
   }
-  backend "s3" {
-    bucket         = "devsecopsawstfstate"
-    key            = "devsecopsawstfstate-modules.tfstate"
-    region         = "ap-south-1"
-    dynamodb_table = "devsecopsaws-terraform-locks"
-    encrypt        = true
 
-  }
-}
+  
+#   backend "s3" {
+#     bucket         = "devsecopsawstfstate"
+#     key            = "devsecopsawstfstate-modules.tfstate"
+#     region         = "ap-south-1"
+#     dynamodb_table = "devsecopsaws-terraform-locks"
+#     encrypt        = true
+
+#   }
+# }
 
 
 
