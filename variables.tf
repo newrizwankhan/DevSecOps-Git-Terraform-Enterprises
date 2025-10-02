@@ -5,7 +5,14 @@ variable "key_name" {}
 variable "project_name" {}
 variable "albname" {}
 variable "albtgname" {}
-# variable "nlbname" {}
-# variable "nlbtgname" {}
+variable "nlbname" {}
+variable "nlbtgname" {}
 variable "alb_certificate_arn" {}
 variable "domainname" {}
+variable "nlbname" {}
+variable "subnets" {}
+variable "tgname" {}
+variable "vpc_id" {}
+variable "private_servers" {}
+variable "certificate_arn" {}
+variable "env" {}
