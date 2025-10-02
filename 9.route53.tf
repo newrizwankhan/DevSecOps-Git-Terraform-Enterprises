@@ -1,6 +1,6 @@
 module "alpha_route53_1_nlb" {
   source  = "app.terraform.io/Khans-shop/route53/route53"
-  version = "1.0.0" # or whichever version matched your inputs
+  version    = "1.2.3"# or whichever version matched your inputs
 
   domainname = var.domainname
   nlb_id     = module.alpha_elb_1.elb_id
