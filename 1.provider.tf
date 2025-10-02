@@ -8,7 +8,7 @@ terraform {
   required_version = ">= 1.3.0, < 2.0.0" #Forcing which version of Terraform needs to be used
   required_providers {
     aws = {
-      version = "<= 1.12.2" #Forcing which version of plugin needs to be used.
+      version = ">= 4.0.0, < 6.15.0" #Forcing which version of plugin needs to be used.
       source  = "hashicorp/aws"
     }
   }
