@@ -1,4 +1,4 @@
-module "alpha_route53_1_nlb" {
+module "alpha_route53_2_nlb" {
   source     = "app.terraform.io/Khans-shop/route53/route53"
   version    = "1.2.3"
   domainname = var.domainname
